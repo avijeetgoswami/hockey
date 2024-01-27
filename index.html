@@ -28,21 +28,49 @@
         .img100 {
             width: 1170px;
             height: 550px;
+            background-color: white;
+            max-width: 1200px;
+            margin: auto;
         }
     </style>
     <style>
         .img110 {
             width: 335px;
             height: 200px;
+            background-color: white;
+            margin: auto;
         }
     </style>
+
+    <!-- Progress bar -->
+    <style>
+        .p1 {
+            color: crimson;
+        }
+    </style>
+    <style>
+        .p2 {
+            color: rgb(220, 183, 20);
+        }
+    </style>
+    <style>
+        .p3 {
+            color: rgb(57, 20, 220);
+        }
+    </style>
+    <style>
+        .p4 {
+            color: rgb(67, 220, 20);
+        }
+    </style>
+
 
 </head>
 
 <body class="font-manrope">
 
     <header>
-        <nav>
+        <nav class="mx-[135px]">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -84,8 +112,9 @@
                 </div>
             </div>
         </nav>
-
-        <div class="carousel max-w[1200px] mx-auto sm:img110 lg:img100">
+    </header>
+    <main>
+        <div class="carousel max-w[1200px] sm:img110 lg:img100 lg:mx-[135px]">
             <div id="slide1" class="carousel-item relative sm:img110 lg:img100">
                 <img src="Images/1.png" class="sm:img110 lg:img100" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -115,8 +144,81 @@
                 </div>
             </div>
         </div>
-    </header>
-    <main>
+
+        <div class="text-center mt-10 mb-2">
+            <div>
+                <h3 class="text-3xl font-extrabold ">Professional Hockey Club</h3>
+                <p class="w-[350 px] mx-auto lg:w-[607px] ">Our legacy is built on a foundation of hard work,
+                    resilience, and a shared passion for the sport. As we continue to strive for greatness.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-around lg:mx-[135px]">
+            <div class="text-center">
+                <div class="radial-progress p1 size-30 text-primary" style="--value:87;" role="progressbar">87%</div>
+                <h3 class="text-center text-2xl font-bold">Prayer Facility</h3>
+                <p class="w-[250px] text-center mx-auto">We have different prayer rooms for players of every religious.
+                </p>
+            </div>
+            <div class="text-center">
+                <div class="radial-progress p2 size-30 text-primary" style="--value:85;" role="progressbar">85%</div>
+                <h3 class="text-center text-2xl font-bold">Experienced Coach</h3>
+                <p class="w-[250px] text-center mx-auto">We have the best coach around.</p>
+            </div>
+            <div class="text-center">
+                <div class="radial-progress p3 size-30 text-primary" style="--value:90;" role="progressbar">90%</div>
+                <h3 class="text-center text-2xl font-bold">Senior Player</h3>
+                <p class="w-[250px] text-center mx-auto">All the senior players attend special training sessions.</p>
+            </div>
+            <div class="text-center">
+                <div class="radial-progress p4 size-30 text-primary" style="--value:80;" role="progressbar">80%</div>
+                <h3 class="text-center text-2xl font-bold">Training Ground</h3>
+                <p class="w-[250px] text-center mx-auto">We have different training grounds for different training
+                    sessions.</p>
+            </div>
+
+        </div>
+
+        <div>
+            <h3 class="text-center text-3xl font-extrabold mt-[50px]">Program Sections</h3>
+            <p class="w-[350 px] mx-auto lg:w-[607px] text-center mb-[20px]">Here, let us show you some designated program
+                sections below.
+        </div>
+
+        <div class="grid gap-3 grid-cols-1 lg:grid-cols-2 mx-[20px] lg:mx-[135px]">
+            <div class="card mb-6 w-[335px] h-[244px] lg:w-[573px] lg:h-[338px]  bg-base-100 shadow-xl image-full">
+                <figure><img src="Images/2.png" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Junior Program</h2>
+                    <p>Our junior program is second to none, providing a nurturing environment where young athletes can
+                        not only develop their hockey skills but also grow as individuals.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary bg-[#FF4240]">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-6 w-[335px] h-[244px] lg:w-[573px] lg:h-[338px] bg-base-100 shadow-xl image-full lg:ml-[-30px]">
+                <figure><img src="Images/3.png" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Professional Program</h2>
+                    <p>Our teenager program is a dynamic and transformative journey for young athletes, strategically designed to navigate the unique challenges. </p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary bg-[#FF4240]">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-6 w-[335px] h-[244px] lg:w-[1170px] lg:h-[450px] bg-base-100 shadow-xl image-full lg:col-span-2">
+                <figure><img src="Images/4.png" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Professional Program</h2>
+                    <p>Our professional program stands as the pinnacle of excellence, designed to cultivate elite talent and propel athletes to the highest levels of competition in the world of hockey.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary bg-[#FF4240]">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
     <footer>
